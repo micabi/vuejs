@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>オブジェクトの繰り返し v-for</title>
+</head>
+<body>
+  <div id="app">
+    <ul>
+      <!-- v-for = 値 in オブジェクト名 -->
+      <li v-for="value in user">{{ value }}</li>
+    </ul>
+    <hr>
+    <ul>
+      <!-- v-for = (値, キー) in オブジェクト名 -->
+      <li v-for="(value, key) in user">
+        {{ key }} : {{ value }}
+      </li>
+    </ul>
+  </div><!-- /#app -->
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="js/vfor.js"></script>
+</body>
+</html>
