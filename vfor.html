@@ -8,6 +8,10 @@
 </head>
 <body>
   <div id="app">
+    <ol>
+      <li v-for="color in colors">{{ color }}</li>
+    </ol>
+    <hr>
     <ul>
       <!-- v-for = 値 in オブジェクト名 -->
       <li v-for="value in user">{{ value }}</li>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>バインド v-bind</title>
+</head>
+<body>
+  <div id="app">
+    <!-- <input type="text" value="{{ message }}"> -->
+    <input type="text" v-bind:value="message">
+  </div><!-- /#app -->
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="js/vbind.js"></script>
+</body>
+</html>
